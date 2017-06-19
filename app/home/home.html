@@ -1,0 +1,83 @@
+<div hide show-gt-xs flex-gt-sm="80" flex-offset-gt-sm="10" layout-align="center">
+    <ui-carousel
+        id="home"
+        slides="dataArray"
+        slides-to-show="2"
+        slides-to-scroll="1"
+        initial-slide="1"
+        autoplay="true"
+        autoplay-speed="2500"
+        dots="false"
+        arrows="false"
+    >
+        <carousel-item>
+            <img ng-src="{{item.src}}" height="500px"></img>
+        </carousel-item>
+    </ui-carousel>
+</div>
+
+<div hide-gt-xs layout-align="center">
+    <ui-carousel
+        id="home"
+        slides="dataArray"
+        slides-to-show="1"
+        slides-to-scroll="1"
+        initial-slide="1"
+        autoplay="true"
+        autoplay-speed="2500"
+        dots="false"
+        arrows="false"
+    >
+        <carousel-item>
+            <img ng-src="{{item.src}}" width="100%"></img>
+        </carousel-item>
+    </ui-carousel>
+</div>
+<div flex layout="row" layout-align="space-around">
+    <md-content class="layout-box" flex-gt-sm="80" layout-align="center" layout-padding>
+        <div layout="column" layout-gt-sm="row" layout-align="space-between">
+            <div flex-gt-sm="30" layout="column" layout-align="start center">
+                <span><b>ISO 9001:2000 Certification</b></span>
+                <span><b>NO. AGS-040705-1C</b></span>
+                <ul>
+                    <li>Robotic</li>
+                    <li>Hydraulic</li>
+                    <li>Electrical</li>
+                    <li>Pneumatic</li>
+                    <li>Lubrication</li>
+                    <li>Mechanical Builders</li>
+                    <li>Programmable Controls</li>
+                </ul>
+            </div>
+
+            <div flex-gt-sm="70" layout="column" class="right-border">
+                <span><b><center>A Leader of Effective Assignment since 1987</center></b></span>
+                <span><b><center>We Dynamically Position Personnel and Contemporary Ideas</center></b></span>
+                <p>When manufacturing automation demands precision, Liquid
+                Automation, Inc. is there, placing the most knowledgeable and
+                dependable personnel at your site.
+                We are proud to have access to the most qualified people in
+                the field, capable of serving a multitude of areas of expertise
+                and guaranteeing total satisfaction. Using the most conscientious
+                and scrupulous methods, we hand pick our employees, from our
+                contract engineers to our general laborers, and put into
+                motion the most innovative and deviceful ideas in the
+                manufacturing business today.</p>
+
+                <p>Our experience in the machine tool industry has taught us the
+                importance of employee performance and quality workmanship.
+                In many cases quality is an attitude and should include not
+                only meeting engineering and functional requirements,
+                but also doing the quality workmanship necessary to produce
+                a final product that is appealing to the eye.</p>
+
+                <p>Quality is measured as a function of customer ratings, their
+                perception of our overall performance and the cost of quality as
+                an expense of doing things wrong. Continuously improving systems
+                and procedures and communicating these with employees develops
+                our high quality ratings, and ensures us a leadership position
+                in our industry.</p>
+            </div>
+        </div>
+    </md-content>
+</div>

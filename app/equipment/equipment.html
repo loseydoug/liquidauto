@@ -1,0 +1,15 @@
+<div layout="row">
+    <md-content flex-gt-sm="80" class="layout-box" flex-offset-gt-sm="10" layout="row" layout-align="center" layout-wrap>
+        <h2>Equipment List</h2>
+        <div>
+            <p>When Liquid Automation clients choose a fixed price bid with
+                contract labor, equipment is a provision of that contract.
+                Please review our available and continually expanding summary of
+                equipment on hand, but not limited to:
+            </p>
+            <ul class="two-column">
+                <li ng-repeat="equip in equipmentList"><span>{{equip}}</span></li>
+            </ul>
+        </div>
+    </md-content>
+</div>

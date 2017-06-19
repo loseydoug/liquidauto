@@ -1,0 +1,88 @@
+<div layout="row">
+    <md-content flex-gt-sm="80" flex-offset-gt-sm="10" layout-align="center" layout="column" layout-gt-sm="row">
+        <div layout="column" class="layout-div" flex-gt-sm="40">
+            <h2><center>Employment Policies</center></h2>
+            <div layout="row" layout-align="center">
+                <div layout="column" layout-align="center" flex-gt-xs="90">
+                    <span><b>Recruiting and Pre-Employment Screening</b></span>
+                    <p>After Liquid Automation, Inc. fully understands your
+                        project needs, we will match the most qualified personnel
+                        to your job by using several means of recruitment,
+                        including our own competently skilled contractor data base.
+                        All Liquid Automation employees have passed our own strict
+                        requirements before being placed on site, including:
+                    </p>
+                    <ul>
+                        <li>Telephone Screening</li>
+                        <li>Application and resume collection with descriptive
+                            knowledge and talent background summaries.</li>
+                        <li>Systematic interviewing and processing</li>
+                        <li>Complete reference and background check</li>
+                        <li>In-office written proficiency tests</li>
+                        <li>Drug screening</li>
+                        <li>Client on-site interviews</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <span style="background-color: rgb(250,250,250); width: 65px;"></span>
+
+        <div layout="column" class="layout-div" flex-gt-sm="60">
+            <h2><center>Employment Opportunities</center></h2>
+            <div layout="column" layout-align="center" flex-gt-sm="90">
+                <p>Please submit résumé for consideration and a recruiter will
+                    get back with as soon as possible. (All fields are required)
+                </p>
+                <div layout="row" class="form-box" layout-align="space-between" layout-wrap>
+                    <md-input-container class="no-bottom" flex-gt-xs="45">
+                        <label>First Name</label>
+                        <input type="text" required ng-disabled="isFormSubmitted" ng-model="applicant.first">
+                    </md-input-container>
+                    <md-input-container class="no-bottom" flex-gt-xs="45">
+                        <label>Last Name</label>
+                        <input type="text" required ng-disabled="isFormSubmitted" ng-model="applicant.last">
+                    </md-input-container>
+                    <md-input-container class="no-bottom" flex-gt-xs="45">
+                        <label>Phone Number</label>
+                        <input type="text" required ng-disabled="isFormSubmitted" ng-model="applicant.phone">
+                    </md-input-container>
+                    <md-input-container class="no-bottom" flex-gt-xs="45">
+                        <label>Email</label>
+                        <input type="text" required ng-disabled="isFormSubmitted" ng-model="applicant.email"></md-input>
+                    </md-input-container>
+                    <md-input-container class="no-bottom" flex-gt-xs="100">
+                        <label>Address</label>
+                        <input type="text" required ng-disabled="isFormSubmitted" ng-model="applicant.address"></md-input>
+                    </md-input-container>
+                    <md-input-container class="no-bottom" flex-gt-xs="35">
+                        <label>City</label>
+                        <input type="text" required ng-disabled="isFormSubmitted" ng-model="applicant.city"></md-input>
+                    </md-input-container>
+                    <md-input-container class="no-bottom">
+                        <label>State</label>
+                        <md-select type="text" required ng-disabled="isFormSubmitted" ng-model="applicant.state">
+                            <md-option ng-repeat="state in states" ng-value="state">{{state}}</md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container class="no-bottom" flex-gt-xs="35">
+                        <label>Zip Code</label>
+                        <input type="text" required ng-disabled="isFormSubmitted" ng-model="applicant.zip"></md-input>
+                    </md-input-container>
+
+                    <div layout="row" layout-align="center" flex="100">
+                        <input class="ng-hide" file-model="resume" id="input-file-id" type="file" />
+                        <span ng-if="resume.name" class="top13" flex-gt-sm="75">{{resume.name}}</span>
+                        <label for="input-file-id" flex-gt-sm="25" class="md-button md-raised button-color" ng-disabled="isFormSubmitted">{{ resume.name ? 'Change PDF' : 'Add PDF' }}</label>
+                    </div>
+                    <span ng-if="fileError" class="error pull-up-10">{{fileError}}</span>
+                </div>
+                <div layout="row" flex-gt-sm="90" layout-align="center end">
+                    <span ng-if="errorText" class="error">{{errorText}}</span>
+                    <md-button class="md-raised button-color submit-button flex" ng-disabled="isFormSubmitted || !isFormValid()" ng-click="submit()">{{submitButtonText}}</md-button>
+                </div>
+            </div>
+        </div>
+    </md-content>
+    <span hide show-gt-sm flex="10"></span>
+</div>

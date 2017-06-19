@@ -1,0 +1,29 @@
+<img class="header-logo" src="assets/liquidlogo.svg" />
+<div layout="column">
+    <div class="nav-header" layout="row" layout-align="center center" flex>
+        <div class="logo-space" flex="none"></div>
+        <div layout-gt-sm="row" layout-sm="column" flex>
+            <div layout="column">
+                <span class="title">Liquid Automation Inc.</span>
+                <span class="subtitle">A Leader in Effective Assignment Since 1987</span>
+            </div>
+            <div class="address" flex layout-align="center end" layout-gt-sm="column">
+                <span>5160 S State St.</span>
+                <span>Goodrich, MI 48438</span>
+                <span>(810) 636-3233</span>
+            </div>
+        <span flex="10"></span>
+    </div>
+    <div layout="row" class="nav-bar" flex>
+        <span hide show-gt-sm class="nav-logo-space"></span>
+        <div layout="row" flex>
+            <md-button class="nav-button" flex ng-class="{'active': getActiveLink() === 'home'}" href="#/">Home</md-button>
+            <md-button class="nav-button" flex ng-class="{'active': getActiveLink() === 'services'}" href="#/services">Services</md-button>
+            <md-button class="nav-button" flex ng-class="{'active': getActiveLink() === 'equipment'}" href="#/equipment">Equipment</md-button>
+            <md-button class="nav-button" flex ng-class="{'active': getActiveLink() === 'references'}" href="#/references">References</md-button>
+            <md-button class="nav-button" flex ng-class="{'active': getActiveLink() === 'employment'}" href="#/employment">Employment</md-button>
+            <md-button class="nav-button" flex ng-class="{'active': getActiveLink() === 'contact'}" href="#/contact">Contact Us</md-button>
+        </div>
+        <span hide show-gt-md class="nav-button" flex="15"></span>
+    </div>
+</div>

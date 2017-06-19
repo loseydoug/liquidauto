@@ -1,0 +1,427 @@
+/* app css stylesheet */
+.body {
+    background-color: #EEEEEE;
+}
+
+.center {
+    text-align: center;
+}
+
+.footer.larger {
+    font-size: 1.15em;
+}
+
+a.icon {
+    text-decoration: none;
+    font-size: 3em;
+}
+
+.pull-up-10 {
+    margin-top: -10px;
+}
+
+.top13 {
+    margin-top: 13px;
+}
+
+.no-bottom {
+    margin-bottom: 0px;
+}
+
+.no-top {
+    margin-top: 0px;
+}
+
+.left25 {
+    margin-left: 25px;
+}
+
+.error {
+    color: #a94442;
+    font-size: .85em;
+    font-style: italic;
+}
+/* Portrait and Landscape */
+@media screen and (max-width: 600px) {
+    .header-logo {
+        position: absolute;
+        top: -20px;
+        left: -10px;
+        height: 150px;
+        width: 150px;
+        z-index: 1000;
+    }
+
+    .nav-bar {
+        background: -ms-linear-gradient(
+            top,
+            #a1b6cc 0%,
+            #85a8cc 25%,
+            #478acc 50%,
+            #317ecc 75%,
+            #0066cc);
+        background: -moz-linear-gradient(
+            top,
+            #a1b6cc 0%,
+            #85a8cc 25%,
+            #478acc 50%,
+            #317ecc 75%,
+            #0066cc);
+        background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#85a8cc),
+            color-stop(0.33, #478acc),
+            color-stop(0.66, #317ecc),
+            to(#0066cc));
+        color: #D9D9D9;
+        height: 25px;
+        width: 100%;
+        position: absolute;
+        top: 105px;
+        left: 0;
+    }
+
+    .nav-button {
+        z-index: 1001;
+        border-style: solid;
+        border-color: #444444;
+        border-width: 0 0 0 1px;
+        border-radius: 0;
+        font-family: "Tahoma", sans-serif;
+        font-size: .5em;
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        padding: 6px 0 6px 0;
+        min-height: 0;
+        line-height: 1.4;
+    }
+
+    .logo-space {
+        width: 125px;
+    }
+
+    .nav-logo-space {
+        width: 150px;
+    }
+
+    .title {
+        margin-top: 25px;
+        color: #0066CC;
+        font-size: 1.125em;
+        font-style: italic;
+        font-weight: 600;
+        text-shadow:
+            3px 3px 0 #AAA,
+            -1px -1px 0 #AAA,
+            1px -1px 0 #AAA,
+            -1px 1px 0 #AAA,
+            1px 1px 0 #AAA;
+    }
+
+    .subtitle {
+        /*margin-left: 10px;*/
+        /*margin-top: -7px;*/
+        font-size: .75em;
+        color: #AAA;
+    }
+
+    .address {
+        margin-top: 10px;
+        color: #000000;
+        font-size: .55em;
+    }
+
+    .nav-comp {
+        margin-top: 42px;
+    }
+
+}
+
+@media screen
+    and (min-width: 601px)
+    and (max-width: 960px) {
+    .header-logo {
+        position: absolute;
+        top: -30px;
+        left: -10px;
+        height: 220px;
+        width: 220px;
+        z-index: 1000;
+    }
+
+    .nav-bar {
+        background: -ms-linear-gradient(
+            top,
+            #a1b6cc 0%,
+            #85a8cc 25%,
+            #478acc 50%,
+            #317ecc 75%,
+            #0066cc);
+        background: -moz-linear-gradient(
+            top,
+            #a1b6cc 0%,
+            #85a8cc 25%,
+            #478acc 50%,
+            #317ecc 75%,
+            #0066cc);
+        background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#85a8cc),
+            color-stop(0.33, #478acc),
+            color-stop(0.66, #317ecc),
+            to(#0066cc));
+        color: #D9D9D9;
+        height: 40px;
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        left: 0;
+    }
+
+    .nav-button {
+        z-index: 1001;
+        border-style: solid;
+        border-color: #444444;
+        border-width: 0 0 0 1px;
+        border-radius: 0;
+        font-family: "Tahoma", sans-serif;
+        font-size: .80em;
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo-space {
+        width: 200px;
+    }
+
+    .nav-logo-space {
+        width: 150px;
+    }
+
+    .title {
+        margin-top: 40px;
+        color: #0066CC;
+        font-size: 1.75em;
+        font-style: italic;
+        font-weight: 600;
+        text-shadow:
+            3px 3px 0 #AAA,
+            -1px -1px 0 #AAA,
+            1px -1px 0 #AAA,
+            -1px 1px 0 #AAA,
+            1px 1px 0 #AAA;
+    }
+
+    .subtitle {
+        /*margin-left: 10px;*/
+        /*margin-top: -7px;*/
+        font-size: .85em;
+        color: #AAA;
+    }
+
+    .address {
+        margin-top: 30px;
+        color: #000000;
+        font-size: .75em;
+    }
+
+    .nav-comp {
+        margin-top: 46px;
+    }
+
+}
+
+@media screen and (min-width: 961px) {
+    .header-logo {
+        position: absolute;
+        top: -50px;
+        left: -15px;
+        z-index: 1000;
+        height: 350px;
+        width: 350px;
+    }
+
+    .nav-header {
+        margin-top: 0;
+        padding-left: 35px;
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        top: 0;
+    }
+
+    .nav-bar {
+        background: -ms-linear-gradient(
+            top,
+            #a1b6cc 0%,
+            #85a8cc 25%,
+            #478acc 50%,
+            #317ecc 75%,
+            #0066cc);
+        background: -moz-linear-gradient(
+            top,
+            #a1b6cc 0%,
+            #85a8cc 25%,
+            #478acc 50%,
+            #317ecc 75%,
+            #0066cc);
+        background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#85a8cc),
+            color-stop(0.33, #478acc),
+            color-stop(0.66, #317ecc),
+            to(#0066cc));
+        color: #D9D9D9;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        left: 0;
+    }
+
+    .logo-space {
+        width: 250px;
+    }
+
+    .nav-logo-space {
+        width: 225px;
+    }
+
+    .title {
+        color: #0066CC;
+        font-size: 2.625em;
+        font-style: italic;
+        font-weight: 600;
+        text-shadow:
+            3px 3px 0 #AAA,
+            -1px -1px 0 #AAA,
+            1px -1px 0 #AAA,
+            -1px 1px 0 #AAA,
+            1px 1px 0 #AAA;
+    }
+
+    .nav-button {
+        z-index: 1001;
+        border-style: solid;
+        border-color: #444444;
+        border-width: 0 0 0 1px;
+        border-radius: 0;
+        font-family: "Tahoma", sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        padding: 6px;
+    }
+
+    .subtitle {
+        margin-left: 50px;
+        margin-top: -7px;
+        font-size: 1.25em;
+        color: #AAA;
+    }
+
+    .address {
+        color: #000000;
+        font-size: 1em;
+    }
+
+    .nav-comp {
+        margin-top: 200px;
+    }
+}
+
+.active {
+    /*background-color: #AAAAAA;*/
+    color: #0066CC;
+    background: -ms-linear-gradient(
+        top,
+        #e1e1e1 0%,
+        #d9d9d9 25%,
+        #cfcfcf 50%,
+        #aaaaaa 100%);
+    background: -moz-linear-gradient(
+        top,
+        #e1e1e1 0%,
+		#d9d9d9 25%,
+        #cfcfcf 50%,
+        #aaaaaa);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#e1e1e1),
+		color-stop(0.25, #d9d9d9),
+        color-stop(0.50, #cfcfcf),
+        to(#aaaaaa));
+}
+
+.footer {
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.layout-box {
+    background-color: white;
+    height: 100%;
+    padding: 25px;
+}
+
+.layout-div {
+    background-color: white;
+    padding: 25px;
+}
+
+ui-carousel#home {
+    margin-bottom: 0;
+}
+
+.two-column {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.two-column > li {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    text-indent: -1.85em;
+    padding: .25em;
+    padding-left: 1.85em;
+}
+
+.four-column {
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-top: 45px;
+}
+
+.four-column > p {
+    -webkit-margin-before: 0;
+}
+
+.carousel-item > img {
+    border-left: 2.5px;
+    border-right: 2.5px;
+    border-color: #EEE;
+    border-style: solid;
+}
+
+.md-button.button-color  {
+    color: #D9D9D9;
+    font-weight: 600;
+    background-color: #0066cc;
+}
